@@ -1,0 +1,31 @@
+﻿@using Model;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StudentDetail</title>
+    <style type="text/css">
+        li {
+        list-style:none;
+        padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        @{ 
+            student objstudent = (student)ViewData["objStudent"];
+            <ul>
+                <li>学号:@objstudent.StudentId</li>
+                <li>姓名:@objstudent.StudentName</li>
+                <li>手机号:@objstudent.PhoneNumber</li>
+                <li>性别:@objstudent.Gender</li>
+                <li>年龄:@objstudent.Age</li>
+                <li>地址:@objstudent.StudentAddress</li>
+            </ul>
+        }
+               
+    </div>
+</body>
+</html>

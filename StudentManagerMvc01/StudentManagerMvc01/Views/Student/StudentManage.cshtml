@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+@{ 
+    string adminName = ((Model.SysAdmin)Session["CurrentAdmin"]).AdminName;
+}
+    <html>
+    <head>
+        <title>学员信息管理</title>
+        <link href="../../Styles/stuManage.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container">
+            <h2>
+                当前用户：@adminName
+            </h2>
+            <div id="querydiv">
+                <div id="formdiv">
+                    <form method="post" action="/Student/GetStuList">
+                        班级：
+                       <input type="text" name="className" value="@(ViewBag.className==null? " ":ViewBag.className)"/>
+                        <input type="submit" value="查询" />
+                    </form>
+                </div>
+                <div id="adddiv"><a href="/Student/StudentAdd/?stuId=1">新增学员</a> </div>
+            </div>
+            <div id="studiv">
+                @if (ViewBag.stuList != null)
+                {
+                foreach (Model.student stu in ViewBag.stuList)
+                { 
+                <div class="stuList">
+                    <div class="stuItem">@(stu.StudentId)  </div>
+                    <div class="stuItem">@stu.StudentName </div>
+                    <div class="stuItem">@stu.Gender </div>
+                    <div class="stuItem"> <a href="/Student/GetStudentDetail/?studentId=@stu.StudentId">查看详细</a>  </div>
+                    <div class="stuItem"> <a href="/Student/GetStudent?stuId=@stu.StudentId">修改</a> </div>
+                    <div class="stuItem">  <a href="/Student/DeleteStudent/?stuId=@stu.StudentId">删除</a>  </div>
+                </div>
+                 }
+                }
+             </div>
+        <scrip>
+            
+        </scrip>
+    </body>
+
+</html>

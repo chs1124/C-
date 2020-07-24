@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Login</title>
+    </head>
+    <body>
+        <div>
+            <form method="post" action="/SysAdmin/Login">
+                <div>
+                    用户名:<input name="loginId" type="text" /><br />
+                    密码:<input name="loginPwd" type="text" /><br />
+                    <input type="submit" value="登录" /><br />
+                </div>
+            </form>
+        </div>
+        <div>
+            <@ViewData["info"]>
+        </div>
+        <div>
+            <a href="/Student">点就跳</a>
+        </div>
+    </body>
+</html>

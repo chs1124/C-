@@ -1,0 +1,47 @@
+﻿@model Model.student
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>添加学生</title>
+    <style type="text/css">
+        li {
+            list-style: none;
+            padding: 8px;
+        }
+
+        input {
+            border: 1px solid #808080;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form method="post" action="/Student/Add">
+            @{
+                <ul>
+                    <li>学员学号:<input type="text" name="stuId" value="@Model.StudentId" /></li>
+                    <li>学员姓名:<input type="text" name="stuName" value="@Model.StudentName" /></li>
+                    <li>
+                        学员性别:<input type="radio" name="gender" checked="@Model.Gender" value="男" />
+                        <input type="radio" name="gender" checked="@Model.Gender" value="女" />
+                    </li>
+                    <li>出生日期:<input type="text" name="birthday" value="@Model.Birthday" /></li>
+                    <li>年龄:<input type="text" name="age" value="@Model.Age" /></li>
+                    <li>身份证号:<input type="text" name="stuIdNo" value="@Model.StudentIdNo" /></li>
+                    <li>手机号码:<input type="text" name="phoneNumber" value="@Model.PhoneNumber" /></li>
+                    <li>家庭住址:<input type="text" name="stuAddress" value="@Model.StudentAddress" /></li>
+                    <li>cardNo:<input type="text" name="cardNo" value="@Model.CardNo" /></li>
+                    <li>班级:<input type="text" name="classId" value="@Model.ClassId" /></li>
+                    <li><input type="submit" value="提交添加" /></li>
+                </ul>
+            }
+
+        </form>
+
+    </div>
+</body>
+</html>

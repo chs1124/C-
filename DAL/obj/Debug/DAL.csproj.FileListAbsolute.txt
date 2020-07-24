@@ -1,0 +1,16 @@
+G:\c#\StudentManagerMvc\DAL\bin\Debug\DAL.dll
+G:\c#\StudentManagerMvc\DAL\bin\Debug\DAL.pdb
+G:\c#\StudentManagerMvc\DAL\bin\Debug\Model.dll
+G:\c#\StudentManagerMvc\DAL\bin\Debug\MySql.Data.dll
+G:\c#\StudentManagerMvc\DAL\bin\Debug\Model.pdb
+G:\c#\StudentManagerMvc\DAL\bin\Debug\MySql.Data.xml
+G:\c#\StudentManagerMvc\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\c#\StudentManagerMvc\DAL\obj\Debug\DAL.dll
+G:\c#\StudentManagerMvc\DAL\obj\Debug\DAL.pdb
+F:\code\C-\DAL\bin\Debug\DAL.dll
+F:\code\C-\DAL\bin\Debug\DAL.pdb
+F:\code\C-\DAL\bin\Debug\Model.dll
+F:\code\C-\DAL\bin\Debug\Model.pdb
+F:\code\C-\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\code\C-\DAL\obj\Debug\DAL.dll
+F:\code\C-\DAL\obj\Debug\DAL.pdb
